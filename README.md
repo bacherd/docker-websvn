@@ -39,7 +39,7 @@ The files *dav_svn.authz* and *dav_svn.passwd* automatic created
 
 ## backups
 
-The environment variable *BACKUP* can be set up for daily backup.
+The environment variable *BACKUP* can be set for daily backup.
 The backup is stored in */opt/backups*.
 
 ## import or create a new repository
