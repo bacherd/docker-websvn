@@ -1,0 +1,12 @@
+#!/bin/bash
+
+REPO_DIR=/opt/repositories
+BACKUP_DIR=/opt/backups
+
+if [ ${BACKUP} == true ]; then
+    for SVN in `ls ${REPO_DIR}`; do
+        if [ -d ${REPO_DIR}/${SVN} ]; then
+            svnadmin dump ${REPO_DIR}/${SVN} > ${BACKUP_DIR}/${SVN}.dump
+        fi
+    done
+fi
