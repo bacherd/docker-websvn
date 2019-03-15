@@ -1,6 +1,6 @@
-# docker-websvn
+# websvn
 
-A simple webdav subversion server with websvn.
+A simple webdav subversion server based on alpine with websvn.
 
 ## how to use
 
@@ -45,3 +45,7 @@ The backup is stored in */opt/backups*.
 ## import or create a new repository
 All svn dump files stored in */opt/imports* will automatically imported on
 container start.
+
+```
+docker exec -it container-name svnadmin create /opt/repositories/<repo-name>
+```
