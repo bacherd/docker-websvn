@@ -27,4 +27,4 @@ done
 popd
 
 crond
-exec /usr/sbin/apachectl -DFOREGROUND;
+exec /usr/sbin/httpd -D FOREGROUND
