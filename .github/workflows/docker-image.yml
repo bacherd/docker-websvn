@@ -22,7 +22,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKER_USER }}/docker-websvn
+          images: ${{ secrets.DOCKER_USER }}/websvn
           flavor: |
             latest=false
           tags: |
@@ -57,4 +57,4 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PUSH_TOKEN }}
-          repository: ${{ secrets.DOCKER_USER }}/docker-websvn
+          repository: ${{ secrets.DOCKER_USER }}/websvn
